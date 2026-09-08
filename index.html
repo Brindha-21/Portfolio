@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brindha B | Python Developer & Frontend Specialist</title>
+    <meta name="description" content="Portfolio of Brindha B - Python Developer, AI/ML & Data Science Enthusiast, and Frontend Web Developer (HTML, CSS, JS).">
+    <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Radial Glow Background Elements -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Top Reading Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-badge">B</span>
+                <span class="logo-text">Brindha B</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/919080174974" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="greeting-tag animate-up">
+                        <span class="hand-wave">👋</span> Hello! I am <span class="highlight-name">Brindha B</span>
+                    </div>
+                    
+                    <h1 class="hero-title animate-up delay-1">
+                        I'm a <span class="gradient-text">Python Developer</span> &amp; <br>
+                        <span class="highlight-border">AI/ML Specialist.</span>
+                    </h1>
+
+                    <p class="hero-subtitle animate-up delay-2">
+                        Specializing as a <span class="typed-text" id="typedText">Python Developer</span><span class="cursor-blink">|</span><br>
+                        Proficient in AI/ML &amp; Data Science along with Frontend Web Development using HTML5, CSS3, and JavaScript. Computer Science Student at SRM Madurai.
+                    </p>
+
+                    <!-- Quick Stats Badges -->
+                    <div class="hero-stats animate-up delay-3">
+                        <div class="stat-pill">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>CGPA: <strong>7.83</strong></span>
+                        </div>
+                        <div class="stat-pill">
+                            <i class="fa-solid fa-trophy"></i>
+                            <span>CodeVita Rank: <strong>12,408</strong></span>
+                        </div>
+                        <div class="stat-pill">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <span><strong>3</strong> Internships</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-ctas animate-up delay-4">
+                        <a href="#projects" class="btn btn-purple-glow">
+                            <span>Explore Work</span>
+                            <i class="fa-solid fa-arrow-down-long"></i>
+                        </a>
+                        <a href="https://wa.me/919080174974" target="_blank" rel="noopener" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>WhatsApp Me</span>
+                        </a>
+                        <button class="btn btn-glass" id="openResumeBtn">
+                            <i class="fa-regular fa-file-pdf"></i>
+                            <span>View Resume</span>
+                        </button>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="social-bar animate-up delay-5">
+                        <a href="https://github.com/Brindha-21" target="_blank" rel="noopener" class="social-link" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/brindha-b-745a65357?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_.brindha.__21?igsi=MXhsajEwdThqNTZzaw==" target="_blank" rel="noopener" class="social-link" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919080174974" target="_blank" rel="noopener" class="social-link wa-hover" title="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:brindhabrindha748@gmail.com" class="social-link" title="Email Me">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Avatar Visual with Glow Ring (Floating cards removed per request) -->
+                <div class="hero-visual animate-up">
+                    <div class="avatar-glow-ring">
+                        <div class="avatar-frame">
+                            <img src="bri.jpeg" alt="Brindha B Profile Photo" class="profile-img" id="profileImage">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="badge-tag">About Me</span>
+                    <h2 class="section-title">Passion for Python, AI/ML &amp; Web Code</h2>
+                    <div class="header-line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-bio glass-card tilt-card">
+                        <div class="bio-icon">
+                            <i class="fa-brands fa-python"></i>
+                        </div>
+                        <h3>Professional Summary</h3>
+                        <p>
+                            I am a Computer Science undergraduate at <strong>SRM Madurai College for Engineering and Technology</strong> (2023–2027) specializing as a <strong>Python Developer</strong> with strong capabilities in <strong>AI/ML &amp; Data Science</strong> and <strong>Frontend Web Development</strong> (HTML5, CSS3, JavaScript).
+                        </p>
+                        <p>
+                            Hands-on experience developing predictive machine learning models, dynamic e-commerce portals, and responsive user interfaces.
+                        </p>
+
+                        <div class="contact-highlights">
+                            <div class="c-info">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Madurai, Tamil Nadu, India</span>
+                            </div>
+                            <div class="c-info">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span class="copyable" data-copy="brindhabrindha748@gmail.com">brindhabrindha748@gmail.com <i class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="c-info">
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="copyable" data-copy="+919080174974">+91 9080174974 <i class="fa-regular fa-copy"></i></span>
+                            </div>
+                            <div class="c-info">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <a href="https://wa.me/919080174974" target="_blank" class="wa-link">+91 9080174974 (WhatsApp)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-pillars">
+                        <div class="pillar-card glass-card tilt-card">
+                            <div class="p-icon"><i class="fa-brands fa-python"></i></div>
+                            <h4>Python Development</h4>
+                            <p>Core Python programming, OOP, data processing, Tkinter interfaces, and automation scripts.</p>
+                        </div>
+
+                        <div class="pillar-card glass-card tilt-card">
+                            <div class="p-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h4>AI / ML &amp; Data Science</h4>
+                            <p>Machine learning modeling using Python, Pandas, NumPy, Scikit-learn, and Matplotlib.</p>
+                        </div>
+
+                        <div class="pillar-card glass-card tilt-card">
+                            <div class="p-icon"><i class="fa-solid fa-code"></i></div>
+                            <h4>Frontend Web Development</h4>
+                            <p>Crafting clean, responsive user interfaces using HTML5, CSS3, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience" class="section dark-bg">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="badge-tag">Career Journey</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <p class="section-subtitle">Practical hands-on industry internships and development roles</p>
+                </div>
+
+                <div class="experience-grid">
+                    <!-- Experience 1 -->
+                    <div class="exp-card glass-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-badge-icon purple-glow-icon">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div class="exp-dates">June – July 2026</div>
+                        </div>
+                        <h3 class="exp-role">AI/ML Intern</h3>
+                        <h4 class="exp-company">White and Box – Tech Products and Services (On-Site)</h4>
+                        <ul class="exp-bullets">
+                            <li>Worked on AI/ML-related project tasks during an intensive one-month internship.</li>
+                            <li>Applied machine learning concepts through hands-on project work and gained practical exposure to end-to-end AI/ML development.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Data Science</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 2 (Updated to reflect HTML/CSS/JS web development implementation) -->
+                    <div class="exp-card glass-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-badge-icon blue-glow-icon">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <div class="exp-dates">June – July 2025</div>
+                        </div>
+                        <h3 class="exp-role">UI/UX Intern</h3>
+                        <h4 class="exp-company">R Sun Technology, Madurai, India (On-Site)</h4>
+                        <ul class="exp-bullets">
+                            <li>Created responsive UI/UX web layouts and interface components directly using HTML5, CSS3, and JavaScript.</li>
+                            <li>Focused on simple navigation, accessibility, and smooth user interaction across web applications.</li>
+                            <li>Implemented frontend web code ensuring cross-browser compatibility and clean layout aesthetics.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Frontend UI</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="exp-card glass-card tilt-card">
+                        <div class="exp-header">
+                            <div class="exp-badge-icon cyan-glow-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <div class="exp-dates">June 2025</div>
+                        </div>
+                        <h3 class="exp-role">Web Development Intern</h3>
+                        <h4 class="exp-company">CodeBind Technologies, Chennai (On-Site)</h4>
+                        <ul class="exp-bullets">
+                            <li>Completed an intensive in-plant training building a full-stack e-commerce web application from scratch.</li>
+                            <li>Participated in specialized AI workshops and corporate placement aptitude training.</li>
+                        </ul>
+                        <div class="exp-tags">
+                            <span>HTML5/CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP &amp; MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="badge-tag">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world AI/ML, Python, and Web Development projects</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Online Shopping E-Commerce -->
+                    <div class="project-card glass-card tilt-card">
+                        <div class="project-img-wrapper">
+                            <img src="shopping cart.jpeg" alt="Online Shopping E-Commerce Project" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-category">Full Stack Web App</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-date"><i class="fa-regular fa-calendar"></i> June 2025</div>
+                            <h3 class="project-title">Online Shopping — E-Commerce Web Application</h3>
+                            <p class="project-desc">
+                                Developed a responsive e-commerce website with product listings, shopping cart state management, and checkout functionality.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-outline-purple view-project-btn" data-title="Online Shopping E-Commerce" data-img="../../brain/ec498fb6-f6fe-4fb3-a2f1-b92e9e7a34f4/.user_uploaded/media_1788451190543.jpg" data-desc="Built during Web Development Internship at CodeBind Technologies. Features catalog view, shopping cart, and checkout workflow." data-tech="HTML5, CSS3, JavaScript, PHP, MySQL">
+                                    <i class="fa-solid fa-eye"></i> Quick View
+                                </button>
+                                <a href="https://github.com/Brindha-21" target="_blank" rel="noopener" class="btn btn-sm btn-glass">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI Health Risk Analysis -->
+                    <div class="project-card glass-card tilt-card">
+                        <div class="project-img-wrapper">
+                            <img src="health risk.jpg" alt="AI Health Risk Analysis Project" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-category">AI / HealthTech</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-date"><i class="fa-regular fa-calendar"></i> Feb – Mar 2026</div>
+                            <h3 class="project-title">AI Health Risk Analysis</h3>
+                            <p class="project-desc">
+                                Web application estimating health risk profiles based on age, BMI, blood pressure, sugar, and cholesterol using a weighted scoring model.
+                            </p>
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Risk Scoring Algorithm</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-outline-purple view-project-btn" data-title="AI Health Risk Analysis" data-img="../../brain/ec498fb6-f6fe-4fb3-a2f1-b92e9e7a34f4/.user_uploaded/media_1788451183360.jpg" data-desc="Estimates individual health risk level (Low, Medium, High) in real time using client-side weighted scoring." data-tech="JavaScript, HTML, CSS, Weighted Risk Scoring">
+                                    <i class="fa-solid fa-eye"></i> Quick View
+                                </button>
+                                <a href="https://github.com/Brindha-21" target="_blank" rel="noopener" class="btn btn-sm btn-glass">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: AI-Powered Student Performance Prediction (Updated with media_1788451887376.jpg) -->
+                    <div class="project-card glass-card tilt-card">
+                        <div class="project-img-wrapper">
+                            <img src="student prediction.jpeg" alt="AI Student Performance Prediction Project" class="project-img">
+                            <div class="project-overlay">
+                                <span class="project-category">Python &amp; AI/ML</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-date"><i class="fa-regular fa-calendar"></i> Innovel Training</div>
+                            <h3 class="project-title">AI-Powered Student Performance Prediction</h3>
+                            <p class="project-desc">
+                                Python Linear Regression application predicting final academic scores based on study hours, attendance rates, and assignment marks.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                                <span>Matplotlib</span>
+                                <span>Tkinter</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-sm btn-outline-purple view-project-btn" data-title="AI-Powered Student Performance Prediction" data-img="../../brain/ec498fb6-f6fe-4fb3-a2f1-b92e9e7a34f4/.user_uploaded/media_1788451887376.jpg" data-desc="Trained a Linear Regression model on student metrics. Built a desktop GUI with Tkinter and visualized predicted vs actual scores using Matplotlib." data-tech="Python, Scikit-learn, Pandas, NumPy, Matplotlib, Tkinter">
+                                    <i class="fa-solid fa-eye"></i> Quick View
+                                </button>
+                                <a href="https://github.com/Brindha-21" target="_blank" rel="noopener" class="btn btn-sm btn-glass">
+                                    <i class="fa-brands fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section dark-bg">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="badge-tag">Competencies</span>
+                    <h2 class="section-title">Technical Skills &amp; Stack</h2>
+                    <p class="section-subtitle">Python, AI/ML, Data Science, and Frontend Web technologies</p>
+                </div>
+
+                <!-- Skill Filter Tabs -->
+                <div class="skills-filter">
+                    <button class="filter-btn active" data-filter="all">All Skills</button>
+                    <button class="filter-btn" data-filter="python">Python &amp; AI</button>
+                    <button class="filter-btn" data-filter="web">Frontend Web (HTML/CSS/JS)</button>
+                    <button class="filter-btn" data-filter="tools">Core CS &amp; Tools</button>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Skill Item: Python -->
+                    <div class="skill-card glass-card" data-category="python">
+                        <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <p>Core Python, OOP &amp; Automation</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 90%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: Data Science & AI/ML -->
+                    <div class="skill-card glass-card" data-category="python">
+                        <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div class="skill-info">
+                            <h4>Data Science &amp; AI/ML</h4>
+                            <p>Scikit-learn, Pandas, NumPy, Matplotlib</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 85%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: HTML5 & CSS3 -->
+                    <div class="skill-card glass-card" data-category="web">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <div class="skill-info">
+                            <h4>HTML5 &amp; CSS3</h4>
+                            <p>Responsive Layouts &amp; Flexbox/Grid</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 92%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: JavaScript -->
+                    <div class="skill-card glass-card" data-category="web">
+                        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <p>DOM Manipulation &amp; Interactive Web</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 85%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: Frontend UI/UX Web -->
+                    <div class="skill-card glass-card" data-category="web">
+                        <div class="skill-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <div class="skill-info">
+                            <h4>Frontend UI/UX Implementation</h4>
+                            <p>Clean Navigation &amp; Usability</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 88%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: Core CS -->
+                    <div class="skill-card glass-card" data-category="tools">
+                        <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+                        <div class="skill-info">
+                            <h4>Core CS Fundamentals</h4>
+                            <p>DSA, OOP, DBMS, Networks</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 85%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: Git & Cloud -->
+                    <div class="skill-card glass-card" data-category="tools">
+                        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                        <div class="skill-info">
+                            <h4>Git, GitHub &amp; Linux</h4>
+                            <p>Version Control &amp; Environments</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 88%;"></span></div>
+                    </div>
+
+                    <!-- Skill Item: Tools & PHP -->
+                    <div class="skill-card glass-card" data-category="tools">
+                        <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <div class="skill-info">
+                            <h4>Cursor, VMware &amp; MySQL</h4>
+                            <p>IDEs &amp; Database Basics</p>
+                        </div>
+                        <div class="skill-level"><span style="width: 82%;"></span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements & Certificates Section -->
+        <section id="achievements" class="section">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="badge-tag">Milestones</span>
+                    <h2 class="section-title">Certificates &amp; Achievements</h2>
+                    <p class="section-subtitle">Recognitions, coding rank, and verified certifications</p>
+                </div>
+
+                <div class="achievements-layout">
+                    <!-- Left: Major Achievements -->
+                    <div class="achievements-column">
+                        <h3 class="sub-heading"><i class="fa-solid fa-trophy"></i> Key Achievements</h3>
+                        
+                        <div class="achievement-card glass-card tilt-card">
+                            <div class="ach-icon gold-badge">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div class="ach-details">
+                                <h4>TCS CodeVita Season 13</h4>
+                                <span class="ach-meta">Global Rank: <strong>12,408</strong></span>
+                                <p>Competed in Tata Consultancy Services' flagship global competitive coding contest.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card glass-card tilt-card">
+                            <div class="ach-icon purple-badge">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <div class="ach-details">
+                                <h4>IIT Madras — IoT Automation Workshop</h4>
+                                <span class="ach-meta">September 2024</span>
+                                <p>Participated in hands-on IoT Automation workshop leveraging Raspberry Pi &amp; Node-RED.</p>
+                            </div>
+                        </div>
+
+                        <div class="achievement-card glass-card tilt-card">
+                            <div class="ach-icon blue-badge">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div class="ach-details">
+                                <h4>Campus Ambassador — Rinex</h4>
+                                <span class="ach-meta">Nov – Dec 2025</span>
+                                <p>Represented Rinex educational platform to foster technical learning and campus outreach.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Verified Certifications -->
+                    <div class="certifications-column">
+                        <h3 class="sub-heading"><i class="fa-solid fa-certificate"></i> Verified Certifications</h3>
+
+                        <div class="cert-list">
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
+                                <div class="cert-info">
+                                    <h4>Programming in Python</h4>
+                                    <span>NPTEL • May 2024</span>
+                                </div>
+                                <span class="cert-tag">Completed</span>
+                            </div>
+
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+                                <div class="cert-info">
+                                    <h4>Data Science for AI Applications</h4>
+                                    <span>SRM Institute of Science and Technology • Feb–Mar 2024</span>
+                                </div>
+                                <span class="cert-tag">Completed</span>
+                            </div>
+
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+                                <div class="cert-info">
+                                    <h4>Artificial Intelligence Training</h4>
+                                    <span>Internz Learn • Mar–Apr 2025</span>
+                                </div>
+                                <span class="cert-tag">Completed</span>
+                            </div>
+
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="cert-info">
+                                    <h4>Web Development with ChatGPT</h4>
+                                    <span>Simplilearn • Aug 2025</span>
+                                </div>
+                                <span class="cert-tag">Completed</span>
+                            </div>
+
+                            <div class="cert-item glass-card">
+                                <div class="cert-icon"><i class="fa-solid fa-file-excel"></i></div>
+                                <div class="cert-info">
+                                    <h4>Introduction to Data Analysis using MS Excel</h4>
+                                    <span>Coursera • Mar 2026</span>
+                                </div>
+                                <span class="cert-tag">Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section dark-bg">
+            <div class="section-container">
+                <div class="section-header text-center">
+                    <span class="badge-tag">Get in Touch</span>
+                    <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+                    <p class="section-subtitle">Open for entry-level Python Developer, AI/ML, and Frontend Web opportunities</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Card -->
+                    <div class="contact-card glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Reach out directly via WhatsApp, email, or connect on social platforms.</p>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="m-icon wa-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                <div>
+                                    <span class="m-label">WhatsApp</span>
+                                    <a href="https://wa.me/919080174974" target="_blank" rel="noopener" class="m-val wa-link">
+                                        +91 9080174974 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="m-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="m-label">Email</span>
+                                    <span class="m-val copyable" data-copy="brindhabrindha748@gmail.com">
+                                        brindhabrindha748@gmail.com <i class="fa-regular fa-copy"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="m-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="m-label">Phone</span>
+                                    <span class="m-val copyable" data-copy="+919080174974">
+                                        +91 9080174974 <i class="fa-regular fa-copy"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="m-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="m-label">Location</span>
+                                    <span class="m-val">TPK Bypass, Madurai, Tamil Nadu</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-badges">
+                            <a href="https://wa.me/919080174974" target="_blank" rel="noopener" class="social-btn wa-btn">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://github.com/Brindha-21" target="_blank" rel="noopener" class="social-btn">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/brindha-b-745a65357?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" class="social-btn">
+                                <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                            </a>
+                            <a href="https://www.instagram.com/_.brindha.__21?igsi=MXhsajEwdThqNTZzaw==" target="_blank" rel="noopener" class="social-btn">
+                                <i class="fa-brands fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Message Form -->
+                    <div class="contact-form-card glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contactForm" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" placeholder="Hi Brindha, I'd like to discuss a Python / Web Development opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-purple-glow btn-full" id="sendMsgBtn">
+                                <span>Send Message</span>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#home" class="logo">
+                    <span class="logo-badge">B</span>
+                    <span class="logo-text">Brindha B</span>
+                </a>
+                <p>&copy; 2026 Brindha B. Python Developer &amp; Frontend Web Specialist.</p>
+            </div>
+            <div class="footer-right">
+                <a href="#home" class="back-to-top" id="backToTopBtn" title="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Resume Modal -->
+    <div class="modal-backdrop" id="resumeModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeResumeBtn">&times;</button>
+            <div class="modal-header">
+                <h2><i class="fa-regular fa-file-pdf"></i> Brindha B - Resume Overview</h2>
+            </div>
+            <div class="modal-body">
+                <div class="resume-preview-box">
+                    <h3>BRINDHA B</h3>
+                    <p class="res-sub">Python Developer | AI/ML &amp; Data Science | Frontend Web (HTML/CSS/JS) | Madurai, TN</p>
+                    <hr class="modal-hr">
+                    <h4>Education</h4>
+                    <p><strong>SRM Madurai College for Engineering and Technology</strong> — B.E. CSE (2023-2027) | CGPA: 7.83</p>
+                    <h4>Experience</h4>
+                    <ul>
+                        <li><strong>AI/ML Intern</strong> @ White and Box (June-July 2026)</li>
+                        <li><strong>UI/UX Intern</strong> @ R Sun Technology (June-July 2025) — Built web UI with HTML, CSS, JS</li>
+                        <li><strong>Web Dev Intern</strong> @ CodeBind Technologies (June 2025)</li>
+                    </ul>
+                    <h4>Key Projects</h4>
+                    <ul>
+                        <li><strong>AI Student Performance Prediction:</strong> Python, Linear Regression, Tkinter</li>
+                        <li><strong>Online Shopping E-Commerce:</strong> HTML, CSS, JS, PHP, MySQL</li>
+                        <li><strong>AI Health Risk Analysis:</strong> JavaScript weighted risk model</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="Bri resume final 1.pdf" target="_blank" class="btn btn-purple-glow">
+                    <i class="fa-solid fa-download"></i> Open &amp; Save PDF Resume
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Project Modal -->
+    <div class="modal-backdrop" id="projectModal">
+        <div class="modal-content glass-card">
+            <button class="modal-close" id="closeProjectBtn">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalProjectTitle">Project Title</h2>
+            </div>
+            <div class="modal-body">
+                <img id="modalProjectImg" src="" alt="Project Preview" class="modal-project-img" style="display:none;">
+                <p id="modalProjectDesc" class="modal-desc-text"></p>
+                <div class="modal-tech-box">
+                    <strong>Technologies Used:</strong>
+                    <p id="modalProjectTech"></p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com/Brindha-21" target="_blank" rel="noopener" class="btn btn-purple-glow">
+                    <i class="fa-brands fa-github"></i> View GitHub Repo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">Copied to clipboard!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
